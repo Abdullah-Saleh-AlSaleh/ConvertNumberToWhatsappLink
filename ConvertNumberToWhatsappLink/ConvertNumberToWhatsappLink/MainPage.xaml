@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConvertNumberToWhatsappLink.MainPage">
+
+
+    <StackLayout>
+        <Frame BackgroundColor="#61F321" Padding="24" CornerRadius="0">
+            <Label  Text=" تحويل رقم إلى رابط واتساب" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" AutomationProperties.IsInAccessibleTree="False"/>
+        </Frame>
+
+        <Editor  TextColor="White" Keyboard="Numeric"  HorizontalOptions="FillAndExpand" MaxLength="9" x:Name="GetNumber" Placeholder="رقم جوال"></Editor>
+        <Button  BackgroundColor="#61F321" TextColor="White" Text="ربط"  Clicked="Button_Clicked"></Button>
+        <Button  BackgroundColor="#61F321" TextColor="White" Text="مشاركة ربط"  Clicked="Button_Clicked_1"></Button>
+    </StackLayout>
+
+</ContentPage>
